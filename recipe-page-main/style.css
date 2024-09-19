@@ -1,0 +1,208 @@
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+  --Brown800: hsl(14, 45%, 36%);
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* list-style-position: inside; */
+}
+html,
+body {
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: var(--rose50);
+  background-size: cover;
+  background-position: center;
+  font-size: min(20px, 3vh);
+}
+::marker {
+  color: var(--Brown800);
+  font-weight: 600;
+}
+h2 {
+  font-family: "Young serif", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 70px auto;
+  background-color: var(--White);
+  border-radius: 15px;
+  padding: 60px;
+}
+.banner {
+  width: 100%;
+}
+.banner .logo {
+  width: 100%;
+}
+.banner .logo img {
+  width: 100%;
+  border-radius: 15px;
+}
+.hero {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.herotext {
+  width: 100%;
+}
+.herotext h1 {
+  font-size: 3rem;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.herotext p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.preptime {
+  margin: 20px 0;
+  background-color: var(--rose50);
+  padding: 25px;
+  border-radius: 10px;
+}
+.preptime h3 {
+  font-size: 22px;
+  color: var(--rose800);
+  font-weight: 600;
+}
+.preptime ul {
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 25px;
+}
+.preptime ul li {
+  padding: 10px;
+}
+.preptime ul span {
+  font-weight: 600;
+}
+.ingredient {
+  margin: 20px 0;
+  /* line-height: 2; */
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+.ingredient h2 {
+  font-size: 35px;
+  color: var(--Brown800);
+  font-weight: 500;
+  letter-spacing: 1;
+  margin-bottom: 10px;
+}
+.ingredient ul {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+.ingredient ul li {
+  padding: 10px;
+}
+.instruction {
+  margin: 20px 0;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+.instruction h2 {
+  font-size: 35px;
+  color: var(--Brown800);
+  font-weight: 500;
+  letter-spacing: 1;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.instruction ol {
+  padding-bottom: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+.instruction ol li {
+  padding: 10px;
+}
+.instruction ol span {
+  font-weight: 600;
+}
+.nutrition {
+  width: 100%;
+}
+.nutritiontext h2 {
+  font-size: 2rem;
+  color: var(--Brown800);
+  font-weight: 500;
+  padding: 10px 0;
+}
+.nutritiontext p {
+  padding: 10px 0;
+}
+.nutritiontable {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+}
+.nutrient {
+  width: 50%;
+}
+.amount {
+  width: 50%;
+  color: var(--Brown800);
+  font-weight: 600;
+}
+.nutritiontable p {
+  padding: 20px;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 16.5px;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+  .banenr {
+    width: 100%;
+  }
+  .banner .logo img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero {
+    padding: 25px;
+  }
+  .herotext h1 {
+    font-size: 2.3rem;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 1;
+  }
+  .ingredient h2,
+  .instruction h2,
+  .nutrition h2 {
+    font-size: 30px;
+  }
+}
